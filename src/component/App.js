@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import Profile from './component/Profile/Profile';
+import Profile from './Profile/Profile';
 
-import user from './social-profile/user.json';
+import user from '../social-profile/user.json';
 
 function App() {
   return (
