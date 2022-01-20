@@ -2,26 +2,22 @@ import PropTypes from 'prop-types';
 
 import {
   ProfileCard,
-  AvatarWrapper,
   Avatar,
-  UserData,
+  UserName,
+  TagName,
+  LocationName,
   Stats,
   StatsItem,
-  UserName,
   StatsLabel,
 } from '../Profile/Profile.styled';
 
 function Profile({ username, tag, location, avatar, stats }) {
   return (
     <ProfileCard>
-      <AvatarWrapper>
         <Avatar src={avatar} alt="User avatar" />
-      </AvatarWrapper>
-      <UserData>
         <UserName>{username}</UserName>
-        <p>{`@${tag}`}</p>
-        <p>{location}</p>
-      </UserData>
+        <TagName>{`@${tag}`}</TagName>
+        <LocationName>{location}</LocationName>
       <Stats>
         <StatsItem>
           <StatsLabel>Followers</StatsLabel>
