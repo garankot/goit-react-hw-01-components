@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
 import Profile from './Profile/Profile';
-
-import user from '../social-profile/user.json';
 import { Container } from './App.styled';
+import user from '../JSON/user.json';
+import data from '../JSON/data.json';
+import Statistics from './Statistics/Statistics';
+
 function App() {
   return (
     <Container>
@@ -13,6 +15,7 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data} />
     </Container>
   );
 }

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ProfileCard = styled.div`
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
   padding-top: 20px;
@@ -16,13 +16,12 @@ export const Avatar = styled.img`
   width: 50%;
   border-radius: 50%;
   display: block;
-  padding-top:20px;
+  padding-top: 20px;
 `;
 export const UserName = styled.p`
   font-weight: 700;
   font-size: 30px;
   line-height: 1.25;
-  
 `;
 export const TagName = styled.p`
   font-weight: 400;
@@ -30,14 +29,14 @@ export const TagName = styled.p`
   line-height: 1.25;
   margin: 0px;
   color: #c5c5c5;
-  `;
+`;
 
 export const LocationName = styled.p`
   font-weight: 400;
   font-size: 20px;
   line-height: 1.25;
   color: #c5c5c5;
-  margin-bottom:40px;
+  margin-bottom: 40px;
 `;
 
 export const Stats = styled.ul`
@@ -54,12 +53,10 @@ export const Stats = styled.ul`
 
 export const StatsItem = styled.li`
   display: flex;
-  flex-wrap: wrap;
   padding: 28px 0px;
   flex-direction: column;
   padding: 26px 0px;
   text-align: center;
-  flex-wrap: wrap;
 `;
 
 export const StatsLabel = styled.span`
