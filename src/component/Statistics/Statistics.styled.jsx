@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StatsSection = styled.div`
-  width: 300px;
+  width: 320px;
 `;
 
 export const StatsTitle = styled.h2`
@@ -13,6 +13,7 @@ export const StatsTitle = styled.h2`
 export const StatsData = styled.ul`
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 0px;
   border: 1px solid #bcbcbc;
   background-color: #edecec;
@@ -20,13 +21,12 @@ export const StatsData = styled.ul`
 export const StatsList = styled.li`
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #bcbcbc;
 `;
 
-export const StatsName = styled.span`
+export const StatsLabel = styled.span`
   margin: 5px;
 `;
-export const StatsNumber = styled.span`
+export const StatsPercent = styled.span`
   font-size: 22px;
   margin: 0px;
 `;

@@ -9,7 +9,7 @@ export const ProfileCard = styled.div`
   padding-top: 20px;
   border-radius: 10px;
   background-color: #f3f3f3;
-  width: 300px;
+  width: 320px;
 `;
 
 export const Avatar = styled.img`

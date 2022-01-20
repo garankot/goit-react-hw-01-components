@@ -5,8 +5,8 @@ import {
   StatsTitle,
   StatsData,
   StatsList,
-  StatsName,
-  StatsNumber,
+  StatsLabel,
+  StatsPercent,
 } from './Statistics.styled';
 
 function Statistics({ title, stats }) {
@@ -16,8 +16,8 @@ function Statistics({ title, stats }) {
       <StatsData>
         {stats.map(stat => (
           <StatsList key={stat.id}>
-            <StatsName>{stat.label}</StatsName>
-            <StatsNumber>{stat.percentage}%</StatsNumber>
+            <StatsLabel>{stat.label}</StatsLabel>
+            <StatsPercent>{stat.percentage}%</StatsPercent>
           </StatsList>
         ))}
       </StatsData>
