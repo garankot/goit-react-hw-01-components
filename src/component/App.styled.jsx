@@ -1,5 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.div`
-text-align: -webkit-center;
+  display: grid;
+  justify-content: center;
 `;

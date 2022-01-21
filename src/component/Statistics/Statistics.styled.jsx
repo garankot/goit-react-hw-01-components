@@ -9,6 +9,7 @@ export const StatsTitle = styled.h2`
   text-transform: uppercase;
   font-size: 30px;
   line-height: 1.25;
+  text-align: center;
 `;
 export const StatsData = styled.ul`
   display: flex;
