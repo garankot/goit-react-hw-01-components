@@ -61,4 +61,10 @@ export const StatsItem = styled.li`
 
 export const StatsLabel = styled.span`
   font-weight: 700;
+  padding-bottom: 10px;
+  color: #7c7b7b;
+`;
+
+export const StatsNumb = styled.span`
+  font-weight: bold;
 `;

@@ -4,6 +4,8 @@ import { Container } from './App.styled';
 import user from '../JSON/user.json';
 import data from '../JSON/data.json';
 import Statistics from './Statistics/Statistics';
+import friends from '../JSON/friends.json';
+import FriendList from './FriendList/FriendList';
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />,
     </Container>
   );
 }

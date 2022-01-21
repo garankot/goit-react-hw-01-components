@@ -9,27 +9,28 @@ import {
   Stats,
   StatsItem,
   StatsLabel,
+  StatsNumb,
 } from '../Profile/Profile.styled';
 
 function Profile({ username, tag, location, avatar, stats }) {
   return (
     <ProfileCard>
-        <Avatar src={avatar} alt="User avatar" />
-        <UserName>{username}</UserName>
-        <TagName>{`@${tag}`}</TagName>
-        <LocationName>{location}</LocationName>
+      <Avatar src={avatar} alt="User avatar" />
+      <UserName>{username}</UserName>
+      <TagName>{`@${tag}`}</TagName>
+      <LocationName>{location}</LocationName>
       <Stats>
         <StatsItem>
           <StatsLabel>Followers</StatsLabel>
-          <span>{stats.followers}</span>
+          <StatsNumb>{stats.followers}</StatsNumb>
         </StatsItem>
         <StatsItem>
           <StatsLabel>Views</StatsLabel>
-          <span>{stats.views}</span>
+          <StatsNumb>{stats.views}</StatsNumb>
         </StatsItem>
         <StatsItem>
           <StatsLabel>Likes</StatsLabel>
-          <span>{stats.likes}</span>
+          <StatsNumb>{stats.likes}</StatsNumb>
         </StatsItem>
       </Stats>
     </ProfileCard>

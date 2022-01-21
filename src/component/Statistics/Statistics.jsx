@@ -27,14 +27,13 @@ function Statistics({ title, stats }) {
 
 Statistics.propTypes = {
   title: PropTypes.string.isRequired,
-  statistics: PropTypes.array.isRequired,
-  //   stats: PropTypes.arrayOf(
-  //     PropTypes.shape({
-  //       id: PropTypes.string.isRequired,
-  //       label: PropTypes.string.isRequired,
-  //       percentage: PropTypes.number.isRequired,
-  //     })
-  //   ),
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default Statistics;
